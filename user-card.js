@@ -1,14 +1,8 @@
 const template=document.createElement('template');
 template.innerHTML=`
-<style>
-h3;{
-    color:indigo;
-}
 
-.user-card img{
-width:60px;
-}
-</style>
+<link rel="stylesheet" href="app.css">
+
 <div class="user-card">
 <img/>
 <div>
@@ -17,6 +11,7 @@ width:60px;
 <p><slot name="email"></slot></p>
 <p><slot name="contact"></slot></p>
 </div>
+<button id="btn">Hide Info</button>
 </div>
 </div>
 `
