@@ -1,6 +1,7 @@
 .user-card{
-    width: 500px;
-    background: #f4f4f4;
+    max-width: 500px;
+    margin: auto;
+    background:#e2e2e2;
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-gap: 10px;
@@ -9,6 +10,14 @@
     border-radius: 5px;
 }
 
+.align{
+    text-align: center;
+    color:blue;
+    margin-bottom:10px;
+}
+.align h3{
+    border-bottom: solid black 4px;
+}
 .user-card img{
     width: 100%;
 }
