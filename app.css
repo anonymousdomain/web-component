@@ -1,0 +1,23 @@
+.user-card{
+    width: 500px;
+    background: #f4f4f4;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 10px;
+    margin-bottom:20px;
+    border-bottom: indigo sloid 3px;
+    border-radius: 5px;
+}
+
+.user-card img{
+    width: 100%;
+}
+
+.user-card button{
+    cursor: pointer;
+    background-color: crimson;
+    color: #fff;
+    border: 0;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
