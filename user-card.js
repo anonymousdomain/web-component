@@ -17,11 +17,34 @@ template.innerHTML=`
 `
 class UserCard extends HTMLElement{
     constructor(){
+        const showinfo=true //by defualt
         super();
         this.attachShadow({mode:'open'})
         this.shadowRoot.appendChild(template.content.cloneNode(true));
        this.shadowRoot.querySelector('h3').innerText=this.getAttribute('name')
        this.shadowRoot.querySelector('img').src=this.getAttribute('avatar')
+    }
+
+    toggleInfo(){
+        const info=this.shadowRoot.querySelector('.info')
+        const btn=this.shadowRoot.querySelector('#btn')
+        this.showinfo=!this.showinfo;
+        if(this.showinfo){
+            info.style.display='block';
+            btn.style.innerText='Hide info';
+        }else{
+            info.style.display='none';
+            btn.style.innerText='Show info';  
+        }
+
+
+    }
+    connectedCallback(){
+        this.shadowRoot.querySelector('#btn').addEventListener('click'
+        ,()=>this.toggleInfo());
+    }
+    disconnectedCallback(){
+        this.shadowRoot.querySelector('#btn').removeEventListener();
     }
 }
 

@@ -5,7 +5,7 @@
     grid-template-columns: 1fr 2fr;
     grid-gap: 10px;
     margin-bottom:20px;
-    border-bottom: indigo sloid 3px;
+    border-bottom: indigo solid 3px;
     border-radius: 5px;
 }
 
